@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 600" width="620" height="600">
+  <rect width="620" height="600" fill="white"/>
+  <text x="310.0" y="26" text-anchor="middle" font-size="15" font-family="serif">
+    无盖盒子: 12&#215;12 铁皮四角剪去 x&#215;x 折成盒子
+  </text>
+  <text x="310.0" y="46" text-anchor="middle" font-size="12" fill="#666">
+    底面 (12-2x)&#215;(12-2x), 高 x, 体积 V(x)=x(12-2x)&#178;
+  </text>
+  <rect x="145.0" y="152.7" width="344.3" height="344.3" fill="#FFF8E1" stroke="#8d6e63" stroke-width="2"/>
+  <rect x="202.4" y="210.1" width="229.5" height="229.5" fill="#A5D6A7" stroke="#2E7D32" stroke-width="1.2"/>
+  <text x="317.2" y="324.8" text-anchor="middle" font-size="11" fill="#2E7D32">底面 (12-2x)&#178;</text>
+  <rect x="145.0" y="439.6" width="57.4" height="57.4" fill="#FFCDD2" stroke="#C62828" stroke-width="1.2"/>
+  <text x="173.7" y="472.3" text-anchor="middle" font-size="10" fill="#C62828">x&#183;x</text>
+  <rect x="431.9" y="439.6" width="57.4" height="57.4" fill="#FFCDD2" stroke="#C62828" stroke-width="1.2"/>
+  <text x="460.6" y="472.3" text-anchor="middle" font-size="10" fill="#C62828">x&#183;x</text>
+  <rect x="145.0" y="152.7" width="57.4" height="57.4" fill="#FFCDD2" stroke="#C62828" stroke-width="1.2"/>
+  <text x="173.7" y="185.4" text-anchor="middle" font-size="10" fill="#C62828">x&#183;x</text>
+  <rect x="431.9" y="152.7" width="57.4" height="57.4" fill="#FFCDD2" stroke="#C62828" stroke-width="1.2"/>
+  <text x="460.6" y="185.4" text-anchor="middle" font-size="10" fill="#C62828">x&#183;x</text>
+  <line x1="145.0" y1="138.3" x2="489.3" y2="138.3" stroke="#444" stroke-width="1"/>
+  <text x="317.2" y="134.3" text-anchor="middle" font-size="12">12</text>
+  <line x1="125.0" y1="497.0" x2="125.0" y2="439.6" stroke="#C62828" stroke-width="1"/>
+  <text x="119.0" y="468.3" text-anchor="end" font-size="12" fill="#C62828">x</text>
+  <line x1="202.4" y1="517.0" x2="431.9" y2="517.0" stroke="#2E7D32" stroke-width="1"/>
+  <text x="317.2" y="532.0" text-anchor="middle" font-size="11" fill="#2E7D32">12-2x</text>
+</svg>
