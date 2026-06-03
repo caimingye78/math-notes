@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600" width="680" height="600">
+  <rect width="680" height="600" fill="white"/>
+  <text x="340.0" y="26" text-anchor="middle" font-size="15" font-family="serif">
+    向量(力)的极坐标形式: 大小 |F| + 方向 &#952; , 分解成分量
+  </text>
+  <text x="340.0" y="46" text-anchor="middle" font-size="12" fill="#666">
+    F=10N, &#952;=37&#176;  &#8594;  Fx=10cos37&#176;=8,  Fy=10sin37&#176;=6
+  </text>
+  <line x1="79.7" y1="497.7" x2="600.3" y2="497.7" stroke="#000" stroke-width="1"/>
+  <line x1="127.0" y1="545.0" x2="127.0" y2="119.0" stroke="#000" stroke-width="1"/>
+  <text x="596.3" y="513.7" font-size="11" font-style="italic">x</text>
+  <text x="133.0" y="123.0" font-size="11" font-style="italic">y</text>
+  <line x1="127.0" y1="497.7" x2="505.7" y2="213.7" stroke="#9C27B0" stroke-width="2.6"/>
+  <polygon points="505.7,213.7 500.1,223.2 495.0,216.3" fill="#9C27B0"/>
+  <text x="272.3" y="349.7" font-size="13" fill="#7B1FA2">F = 10</text>
+  <line x1="127.0" y1="497.7" x2="505.7" y2="497.7" stroke="#1565C0" stroke-width="2.2"/>
+  <polygon points="505.7,497.7 495.5,502.0 495.5,493.4" fill="#1565C0"/>
+  <line x1="127.0" y1="497.7" x2="127.0" y2="213.7" stroke="#2E7D32" stroke-width="2.2"/>
+  <polygon points="127.0,213.7 131.3,223.8 122.7,223.8" fill="#2E7D32"/>
+  <line x1="505.7" y1="213.7" x2="505.7" y2="497.7" stroke="#999" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="505.7" y1="213.7" x2="127.0" y2="213.7" stroke="#999" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="302.3" y="513.7" font-size="12" fill="#1565C0">Fx = 8</text>
+  <text x="83.0" y="355.7" font-size="12" fill="#2E7D32">Fy = 6</text>
+  <path d="M 167.0 497.7 A 40 40 0 0 0 158.9 473.6" fill="none" stroke="#E65100" stroke-width="1.5"/>
+  <text x="173.0" y="485.7" font-size="12" fill="#E65100">&#952;=37&#176;</text>
+  <rect x="493.7" y="485.7" width="12" height="12" fill="none" stroke="#999" stroke-width="1"/>
+  <circle cx="505.7" cy="213.7" r="4.5" fill="#9C27B0"/>
+</svg>

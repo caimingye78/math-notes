@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560">
+  <rect width="720" height="560" fill="white"/>
+  <text x="360.0" y="28" text-anchor="middle" font-size="16" font-family="serif">
+    设 k 法：DE // BC, AD:DB=2:3，求 &#9651;ADE 与梯形 DBCE 面积比
+  </text>
+  <polygon points="287.5,130.0 142.5,430.0 577.5,430.0" fill="#90CAF9" fill-opacity="0.25" stroke="#1565C0" stroke-width="2"/>
+  <polygon points="287.5,130.0 229.5,250.0 403.5,250.0" fill="#A5D6A7" fill-opacity="0.7" stroke="#2E7D32" stroke-width="2"/>
+  <line x1="229.5" y1="250.0" x2="403.5" y2="250.0" stroke="#2E7D32" stroke-width="2"/>
+  <circle cx="287.5" cy="130.0" r="4" fill="#333"/>
+  <text x="281.5" y="122.0" font-size="13" font-family="serif">A</text>
+  <circle cx="142.5" cy="430.0" r="4" fill="#333"/>
+  <text x="126.5" y="436.0" font-size="13" font-family="serif">B</text>
+  <circle cx="577.5" cy="430.0" r="4" fill="#333"/>
+  <text x="585.5" y="436.0" font-size="13" font-family="serif">C</text>
+  <circle cx="229.5" cy="250.0" r="4" fill="#333"/>
+  <text x="209.5" y="254.0" font-size="13" font-family="serif">D</text>
+  <circle cx="403.5" cy="250.0" r="4" fill="#333"/>
+  <text x="411.5" y="254.0" font-size="13" font-family="serif">E</text>
+  <text x="230.5" y="190.0" font-size="12" fill="#C62828">AD=2k</text>
+  <text x="156.0" y="340.0" font-size="12" fill="#C62828">DB=3k</text>
+
+  <rect x="420" y="80" width="270" height="118" fill="white" stroke="#ccc" rx="4"/>
+  <text x="432" y="102" font-size="12">设 AD=2k, DB=3k，则 AB=5k</text>
+  <text x="432" y="124" font-size="12">DE//BC =&gt; &#9651;ADE &#8764; &#9651;ABC</text>
+  <text x="432" y="146" font-size="12">相似比 = AD:AB = 2:5</text>
+  <text x="432" y="168" font-size="12">面积比 = (2:5)&#178; = 4:25</text>
+  <text x="432" y="190" font-size="12">&#9651;ADE : 梯形 = 4 : (25-4) = 4:21</text>
+</svg>

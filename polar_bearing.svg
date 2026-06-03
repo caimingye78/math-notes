@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 720" width="660" height="720">
+  <rect width="660" height="720" fill="white"/>
+  <text x="330.0" y="26" text-anchor="middle" font-size="16" font-family="serif">
+    极坐标的"影子"：方位角问题 (r=100, 北偏东30&#176;)
+  </text>
+  <text x="330.0" y="48" text-anchor="middle" font-size="12" fill="#666">
+    用(距离, 角度)定位一点 -&gt; 解直角三角形求东/北分量
+  </text>
+  <line x1="156.4" y1="564.3" x2="156.4" y2="143.1" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="150.4" y="137.1" font-size="13" fill="#444">北 N</text>
+  <line x1="156.4" y1="564.3" x2="580.7" y2="564.3" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="584.7" y="568.3" font-size="13" fill="#444">东 E</text>
+  <circle cx="156.4" cy="564.3" r="4.5" fill="#000"/>
+  <text x="134.4" y="580.3" font-size="13">O</text>
+  <line x1="156.4" y1="564.3" x2="349.3" y2="232.7" stroke="#9C27B0" stroke-width="2.5"/>
+  <text x="208.9" y="398.5" font-size="12" fill="#7B1FA2">r = 100</text>
+  <path d="M 156.4 518.3 A 46 46 0 0 1 179.4 524.4" fill="none" stroke="#E65100" stroke-width="1.6"/>
+  <text x="170.3" y="517.9" font-size="12" fill="#E65100">30&#176;</text>
+  <line x1="349.3" y1="232.7" x2="156.4" y2="232.7" stroke="#1565C0" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="349.3" y1="232.7" x2="349.3" y2="564.3" stroke="#2E7D32" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <circle cx="349.3" cy="232.7" r="5" fill="#9C27B0"/>
+  <text x="357.3" y="232.7" font-size="12" fill="#7B1FA2">P</text>
+  <text x="222.9" y="226.7" font-size="11" fill="#1565C0">东向=100sin30=50</text>
+  <text x="355.3" y="398.5" font-size="11" fill="#2E7D32">北向=100cos30=50&#8730;3&#8776;86.6</text>
+
+  <rect x="64" y="128" width="252" height="92" fill="white" fill-opacity="0.92" stroke="#ccc" rx="4"/>
+  <text x="76" y="150" font-size="11">极坐标记法: P = (r, &#952;) = (100, 北偏东30&#176;)</text>
+  <text x="76" y="170" font-size="11">直角坐标: 东 x = r&#183;sin&#952;,  北 y = r&#183;cos&#952;</text>
+  <text x="76" y="190" font-size="11">=&gt; P 在 O 正东 50, 正北 50&#8730;3 处</text>
+  <text x="76" y="210" font-size="11">本质就是初中"解直角三角形"</text>
+</svg>
