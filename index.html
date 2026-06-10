@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数学复习笔记：从抛物线到导数</title>
+<style>
+  body{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.7;color:#222;max-width:900px;margin:0 auto;padding:24px 18px 80px;background:#fafafa;}
+  h1{font-size:26px;border-bottom:3px solid #1565C0;padding-bottom:10px;}
+  h2{font-size:21px;margin-top:42px;color:#1565C0;border-left:5px solid #1565C0;padding-left:10px;}
+  p{margin:10px 0;}
+  .sub{color:#666;font-size:14px;margin-top:-6px;}
+  figure{margin:18px 0;text-align:center;}
+  img{max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff;}
+  figcaption{font-size:13px;color:#666;margin-top:6px;}
+  pre{background:#1e1e1e;color:#e8e8e8;padding:14px 16px;border-radius:8px;overflow-x:auto;font-family:"SF Mono",Consolas,"Courier New",monospace;font-size:14px;line-height:1.55;}
+  .nav{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:14px 20px;}
+  .nav a{display:inline-block;margin:4px 14px 4px 0;color:#1565C0;text-decoration:none;font-size:14px;}
+  .nav a:hover{text-decoration:underline;}
+  .tip{background:#FFF8E1;border-left:4px solid #FF9800;padding:10px 14px;border-radius:4px;margin:14px 0;font-size:14px;}
+  footer{margin-top:50px;padding-top:18px;border-top:1px solid #ddd;color:#888;font-size:13px;}
+</style>
+</head>
+<body>
+
+<h1>数学复习笔记：从抛物线到导数</h1>
+<p class="sub">一条贯穿 直角坐标 → 极坐标 → 向量 → 复数 → 斜坐标系 → 导数 的学习线索。公式用纯文本等宽显示，x^2 表示平方，sqrt 表示根号。</p>
+
+<div class="nav">
+  <strong>目录：</strong><br>
+  <a href="#s1">1. 二次函数：交点·韦达·设点法</a>
+  <a href="#s2">2. 极坐标的影子：方位角</a>
+  <a href="#s3">3. 复数与极坐标</a>
+  <a href="#s4">4. 向量与极坐标</a>
+  <a href="#s5">5. 斜坐标系与向量</a>
+  <a href="#s6">6. 拓展练习</a>
+  <a href="#s7">7. 导数入门</a>
+  <a href="#s8">8. 导数实战</a>
+</div>
+
+<h2 id="s1">一、二次函数：交点、韦达、设点法</h2>
+<figure><img src="line_parabola.svg" alt="直线与抛物线两交点"><figcaption>过两交点的直线：y = [a(x1+x2)+b]·x + (c − a·x1·x2)</figcaption></figure>
+<figure><img src="vieta.svg" alt="韦达定理"><figcaption>韦达定理：两根和 −B/a，两根积 C/a，对称轴在两根正中间</figcaption></figure>
+<pre>两交点定直线（y = a x^2 + b x + c）：
+    y = [a(x1+x2) + b]·x + (c - a·x1·x2)
+韦达定理（a x^2 + B x + C = 0）：
+    x1 + x2 = -B/a      x1·x2 = C/a</pre>
+<figure><img src="param_point.svg" alt="设点法铅垂高"><figcaption>设点法 + 铅垂高求三角形最大面积</figcaption></figure>
+<figure><img src="param_isosceles.svg" alt="对称轴设点等腰5解"><figcaption>对称轴上设点 Q(1,m)，等腰三角形分类讨论（共 5 解）</figcaption></figure>
+<figure><img src="similar_k.svg" alt="设k法相似面积比"><figcaption>设 k 法：DE//BC, AD:DB=2:3 → 面积比 4:25 → 三角形:梯形 = 4:21</figcaption></figure>
+<figure><img src="focus_directrix.svg" alt="焦点准线"><figcaption>抛物线焦点与准线（高中圆锥曲线，初中不考）</figcaption></figure>
+
+<h2 id="s2">二、极坐标的影子：方位角与解直角三角形</h2>
+<p>极坐标 (r, θ) 是高中内容，但其灵魂「用距离+角度定位点」在初中就是解直角三角形：x = r·cosθ, y = r·sinθ。</p>
+<figure><img src="polar_bearing.svg" alt="方位角分解"><figcaption>方位角 = 极坐标思想，拆成东/北分量</figcaption></figure>
+<figure><img src="bearing_reef.svg" alt="船是否触礁"><figcaption>船是否触礁：转角 → 等腰 → 作垂线，h=5√3≈8.66 &gt; 8 不触礁</figcaption></figure>
+
+<h2 id="s3">三、复数与极坐标</h2>
+<figure><img src="complex_polar.svg" alt="复数极坐标形式"><figcaption>复数的模与幅角，实虚部 = r·cosθ / r·sinθ</figcaption></figure>
+<figure><img src="complex_mult.svg" alt="复数相乘=旋转"><figcaption>相乘 = 模相乘、幅角相加：2∠30° × √2∠45° = 2√2∠75°，乘 i = 转 90°</figcaption></figure>
+<pre>极坐标形式：z = r(cosθ + i·sinθ) = r·e^(iθ)
+棣莫弗：[r(cosθ+i sinθ)]^n = r^n (cos nθ + i sin nθ)
+欧拉公式：e^(iθ) = cosθ + i·sinθ</pre>
+
+<h2 id="s4">四、向量与极坐标</h2>
+<figure><img src="vector_polar.svg" alt="力的分解"><figcaption>力的分解：Fx = F·cosθ, Fy = F·sinθ（F=10N,37° → 8,6）</figcaption></figure>
+<figure><img src="polar_unit_vectors.svg" alt="极坐标基底"><figcaption>圆周运动：位置沿 e_r、速度沿 e_θ、向心加速度沿 -e_r</figcaption></figure>
+
+<h2 id="s5">五、斜坐标系与向量</h2>
+<p>斜坐标系 = 用两个不垂直的基底 e1、e2 给平面定坐标（理论基础：平面向量基本定理）。</p>
+<figure><img src="oblique_basis.svg" alt="斜坐标分解"><figcaption>沿非正交基底分解向量（平行投影，非垂直）</figcaption></figure>
+<figure><img src="oblique_grid.svg" alt="斜网格"><figcaption>斜网格：线性运算照旧，长度公式带交叉项</figcaption></figure>
+<figure><img src="oblique_vector_basis.svg" alt="平行四边形坐标化"><figcaption>平行四边形坐标化为「单位正方形」</figcaption></figure>
+<figure><img src="oblique_area.svg" alt="面积比仿射"><figcaption>第一类（仿射）：面积比 = 行列式之比，免 cosω</figcaption></figure>
+<figure><img src="oblique_metric.svg" alt="点积矩阵度量"><figcaption>第二类（度量）：长度/夹角需点积矩阵 G，带 cosω</figcaption></figure>
+<figure><img src="oblique_example.svg" alt="斜坐标综合例题"><figcaption>综合例题：面积比（仿射）+ 求 |EF|（度量）同题切换</figcaption></figure>
+<pre>仿射类（免 cosω，斜坐标可照搬直角系）：
+  · 直线方程 ax+by+c=0    · 共线判断 ad - bc = 0
+  · 面积比 = 行列式之比    · 取边为基底做坐标化
+度量类（必须用点积矩阵 G，带 cosω）：
+  · G = [[1, cosω],[cosω, 1]]（单位基底）
+  · u·v = ac + bd + (ad+bc)·cosω
+  · |v|^2 = x^2 + y^2 + 2xy·cosω
+口诀：问「在不在线上/占多少比例」→ 用坐标；问「多长/多少度/垂直」→ 用 G。</pre>
+
+<h2 id="s6">六、拓展练习</h2>
+<figure><img src="elevation_tower.svg" alt="仰角测塔高"><figcaption>两次仰角测塔高：tan30=h/AD, tan60=h/BD, AD−BD=20 → h=10√3≈17.32</figcaption></figure>
+<figure><img src="right_triangle_qbc.svg" alt="直角三角形分类"><figcaption>直角三角形分类讨论：按直角顶点分三种，用数量积=0 判定，共 4 解</figcaption></figure>
+<figure><img src="roots_unity5.svg" alt="五次单位根"><figcaption>z⁵=1 的五个单位根：模都为 1、幅角间隔 72°，正五边形</figcaption></figure>
+<pre>等腰三角形：按「哪两条边相等」分类（距离相等 / 平方相等）
+直角三角形：按「直角顶点是谁」分类（向量数量积 = 0）</pre>
+
+<h2 id="s7">七、导数入门</h2>
+<figure><img src="secant_tangent.svg" alt="割线逼近切线"><figcaption>导数的定义：割线斜率的极限 = 切线斜率。y=x² 在 P(1,1)，斜率 3.5→3→2.5→2.25→2 = f'(1)</figcaption></figure>
+<figure><img src="extrema_cubic.svg" alt="导数求极值"><figcaption>f(x)=x³−3x，f'(x)=3(x²−1)。f'&gt;0 增(绿)、f'&lt;0 减(红)，极大(−1,2)、极小(1,−2)</figcaption></figure>
+<pre>导数 f'(x) = lim(h→0) [f(x+h)-f(x)] / h   （割线斜率的极限）
+几何意义：f'(x) = 曲线在 x 处切线的斜率
+常用公式：(x^n)' = n·x^(n-1)，(C)'=0，(sin x)'=cos x，(cos x)'=-sin x
+求极值三步：1) 求 f'(x)  2) 解 f'(x)=0  3) 看两侧 f' 正负（增→减极大，减→增极小）</pre>
+
+<h2 id="s8">八、导数实战：优化应用题</h2>
+<figure><img src="box_net.svg" alt="盒子展开图"><figcaption>12×12 铁皮四角剪去 x·x 折成无盖盒子；底面 (12−2x)²，高 x</figcaption></figure>
+<figure><img src="box_volume.svg" alt="体积最大"><figcaption>体积 V(x)=x(12−2x)²，V'(x)=12(x−2)(x−6)，x=2 时体积最大 128</figcaption></figure>
+<pre>优化套路四步：
+  1) 设变量，写目标函数 + 定义域（带不等式限制，本题 0&lt;x&lt;6）
+  2) 求导 → 令 f'=0 → 解候选点，剔除定义域外（x=6 舍）
+  3) 用导数符号判定：先增后减为极大/最大
+  4) 代回算出最优值并回答实际问题
+适用：用料最省、利润最大、容积最大、路程最短 等一大类问题</pre>
+
+<div class="tip">本页所有图为纯 Python 标准库生成的 SVG，无第三方依赖；每张图都有对应的 .py 脚本，改数值即可重新生成。</div>
+
+<footer>数学复习笔记 · 由学习对话整理而成 · 源码与全部图见 <a href="https://github.com/caimingye78/math-notes">caimingye78/math-notes</a></footer>
+
+</body>
+</html>
